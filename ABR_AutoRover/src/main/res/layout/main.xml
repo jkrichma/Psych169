@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_label"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ir_left"
+            android:paddingLeft="48dp"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ir_center"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ir_right"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/irLeft"
+            android:text="0.0"
+            android:paddingLeft="64dp"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/irCenter"
+            android:text="0.0"
+            android:paddingLeft="48dp"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/irRight"
+            android:text="0.0"
+            android:paddingLeft="32dp"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ToggleButton
+            android:id="@+id/buttonStartStop"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:textOn="@string/stop"
+            android:textOff="@string/start"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+</LinearLayout>
